@@ -4,6 +4,10 @@ class A {
 	private int deptId;
 	private String deptName;
 
+	public A() {
+		System.out.println("A's constructor called: Not mandatory");
+	}
+	
 	public int getDeptId() {
 		return deptId;
 	}

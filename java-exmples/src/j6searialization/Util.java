@@ -10,6 +10,7 @@ import java.io.ObjectOutputStream;
 public class Util {
 
 	public static void serialzeObject(Object obj, String fileName) {
+		System.out.println("Searialing the object");
 
 		try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(fileName))) {
 			objectOutputStream.writeObject(obj);
@@ -23,6 +24,7 @@ public class Util {
 	}
 
 	public static Object deSerialzeObject(String fileName) {
+		System.out.println("DeSearialing the object");
 		try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(fileName))) {
 			return objectInputStream.readObject();
 		} catch (FileNotFoundException e) {

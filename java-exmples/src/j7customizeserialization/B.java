@@ -11,6 +11,10 @@ class B extends A implements Serializable {
 	private int empId;
 	private String empName;
 
+	public B() {
+		System.out.println("B's constructor called: Not mandatory");
+	}
+	
 	public int getEmpId() {
 		return empId;
 	}
