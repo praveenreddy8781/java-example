@@ -1,4 +1,4 @@
-package j20stringsearch;
+package j21stringsearch;
 
 //indexOf() and lastIndexOf()
 //contains() 
