@@ -1,8 +1,8 @@
+package j46yield;
 
-public class Test {
+public class YieldDemo {
 
 	public static void main(String[] args) {
 
 	}
-
 }
