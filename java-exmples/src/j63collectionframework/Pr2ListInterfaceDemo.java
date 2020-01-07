@@ -2,9 +2,11 @@ package j63collectionframework;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
-public class Prog1AListInterfaceDemo {
+public class Pr2ListInterfaceDemo {
 
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();
@@ -62,5 +64,23 @@ public class Prog1AListInterfaceDemo {
 		System.out.println("subList: " + subList);
 		System.out.println("list: " + list);
 
+//		iterator()
+		System.out.println("Using iterator(): ");
+		Iterator<String> itr = list.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		
+//		using listIterator()
+		System.out.println("using listIterator() forward direction: ");
+		ListIterator<String> listIterator = list.listIterator();
+		while(listIterator.hasNext()) {
+			System.out.println(listIterator.next());
+		}
+		
+		System.out.println("using listIterator() backward direction: ");
+		while(listIterator.hasPrevious()) {
+			System.out.println(listIterator.previous());
+		}
 	}
 }

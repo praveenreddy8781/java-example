@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.function.Predicate;
 
-public class Prog1ACollectionInterfaceDemo {
+public class Pr1CollectionInterfaceDemo {
 
 	public static void main(String[] args) {
 
