@@ -21,6 +21,9 @@ public class Pr3SetInterfaceDemo {
 
 //		Doesn't allow duplicate values
 		System.out.println("add duplicate : set.add(\"E4\"): " + set.add("E4"));
+		
+//		Allow nulls
+//		set.add(null);
 
 //		display set values
 		System.out.println("set: " + set);
