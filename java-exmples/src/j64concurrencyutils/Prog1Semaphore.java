@@ -82,7 +82,7 @@ class DecThread implements Runnable {
 public class Prog1Semaphore {
 
 	public static void main(String[] args) {
-		Semaphore semaphore = new Semaphore(2);
+		Semaphore semaphore = new Semaphore(1);
 
 		new Thread(new IncThread("A", semaphore)).start();
 		new Thread(new DecThread("B", semaphore)).start();
